@@ -1,0 +1,151 @@
+/*background color: Color de fondo*/
+/*Font-size: Tamaño de fuente*/
+/*Font-weight: Grosor de la fuente*/
+/*Font-style: Estilo de fuente*/ 
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{font-family: "Righteous", sans-serif;
+}
+/*-----Header-----*/
+
+header{background-color: #000000;
+    height: 17vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+header img{width: 180px;}
+
+header h1{font-size: 65px;
+          margin:80px;
+          text-transform: initial;
+          color:white;}
+
+header nav ul li{
+    display:inline-block;
+    margin:15px;
+}
+
+header nav ul li a{color: white;
+text-decoration: none;}
+
+/*-----Main-----*/
+main {background-color: #000000;}
+.hero{
+    height: 50vh;
+    background-image: url(../img/fondo-pantera-negra.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.hero h2{text-decoration:none;
+    color: white;
+font-size: xx-large;}
+
+    .hero p{color:#fffb00;
+    text-align:initial;
+font-size: x-large;}
+
+.batman2{display: flex;
+justify-content: space-around;
+align-items: center;}
+
+.batman h2{text-decoration:none;
+color: rgb(0, 0, 0);
+text-align: center;
+font-size:xx-large;
+background-color: white;
+padding: 15px;}
+
+.batman .batman2 div{border: 1px solid rgb(255, 255, 255);
+width:500px;
+text-align: center;
+margin: 15px;
+}
+
+.batman div h3{color: rgb(255, 255, 255);
+margin: 5px;}
+
+.batman div a{text-decoration: none;
+color: black;
+background-color: white;
+font-size: 20px;
+padding: 1px;
+border-radius:7px ;}
+
+.batman div img{width: 100%;
+height:100%;}
+
+/* .batman3{width: 100px;
+height: 100px;} */
+
+.cristiano img{height: 300px;
+width: 400px;}
+
+.cristiano h2{font-size: xx-large;
+color: white;
+text-decoration: underline;}
+
+.cristiano p{font-size: x-large;}
+
+.florenzi{height: 50vh;}
+
+.florenzi h2{font-size: xx-large;
+color:white;
+text-decoration: underline;}
+
+.florenzi h3{font-size: x-large;
+color:white}
+
+.florenzi ol li{font-size: x-large}
+
+.paloma h2{font-size: xx-large;
+color: white;
+text-decoration: underline}
+
+.contacto h2{color: white;
+font-size: xx-large;
+text-decoration: underline;}
+
+.contacto p{color: #fffb00;
+font-size: x-large}
+
+.pato h2{font-size: xx-large;
+color: white;}
+
+.pato img{width: 100px;}
+
+.pato p{font-size: x-large;
+color:#fffb00}
+
+.whatsapp img{background-color: white;
+    border-radius: 15px;
+width: 60px;
+position:fixed;
+bottom:50px;
+right:20px;}
+
+/*-----Footer-----*/
+footer{padding: 20px;}
+
+footer h2{font-size: xx-large; 
+text-align: center;} 
+
+footer p{font-size: x-large; 
+text-align: center;} 
+
+footer div {display: flex;
+align-items: center;
+justify-content: space-around;
+font-size: xx-large;}
+
+footer i {color: black;}
