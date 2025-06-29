@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-/* ----- Reset ----- */
+/* ----- Reset Básico ----- */
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@ li::selection {
     background-color: rgba(255, 255, 0, 0.849);
 }
 
-/* ----- Header ----- */
+/* ----- Header (Navbar) ----- */
 
 .navbar-brand {
     color: white;
@@ -253,6 +253,7 @@ main {
 .grid-principal {
     margin: 20px auto;
     display: grid;
+    
     grid-auto-rows: minmax(200px, auto);
     gap: 15px;
     padding: 0 20px;
@@ -273,6 +274,7 @@ main {
     overflow: hidden;
     border-radius: 8px;
     cursor: pointer; 
+}
 
 .grids img {
     filter: brightness(0.8);
@@ -368,6 +370,7 @@ footer a:hover {
     }
     .comprar p {
         font-size: large; 
+    }
 }
 
 
