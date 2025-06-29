@@ -1,277 +1,449 @@
-/*background color: Color de fondo*/
-/*Font-size: Tamaño de fuente*/
-/*Font-weight: Grosor de la fuente*/
-/*Font-style: Estilo de fuente*/ 
-
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-*{
+/* ----- Reset ----- */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{font-family: "Righteous", sans-serif;
+body {
+    font-family: "Righteous", sans-serif;
+    background-color: black;
+    color: white; 
 }
 
-p::selection{background-color: rgba(255, 255, 0, 0.849);}
-
-h2::selection{background-color: rgba(255, 255, 0, 0.849) ;}
-
-h3::selection{background-color: rgba(255, 255, 0, 0.849);}
-
-img::selection{background-color: rgba(255, 255, 0, 0.849);}
-
-a::selection{background-color: rgba(255, 255, 0, 0.849);}
-
-li::selection{background-color: rgba(255, 255, 0, 0.849);}
-
-
-
-
-
-/*-----Header-----*/
-
-header{background-color: black;}
-
-header a{color:white;
-font-size: x-large;
-text-decoration: none;}
-
-header button{color:rgb(0, 0, 0) !important;}
-
-/*header{background-color: #000000;
-    height: 17vh;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+/* ----- Estilos de Selección ----- */
+p::selection,
+h2::selection,
+h3::selection,
+img::selection,
+a::selection,
+li::selection {
+    background-color: rgba(255, 255, 0, 0.849);
 }
 
+/* ----- Header ----- */
 
-header img{width: 180px;}
-
-header h1{font-size: 65px;
-margin:80px;
-text-transform: initial;
-color:white;}
-
-header nav ul li{
-    display:inline-block;
-    margin:15px;
+.navbar-brand {
+    color: white;
+    font-size: x-large;
+    text-decoration: none;
 }
 
-header nav ul li a{color: white;
-text-decoration: none;}*/
+.navbar-toggler {
+    color: rgb(255, 255, 255) !important; 
+}
 
-/*-----Main-----*/
+/* Offcanvas de Bootstrap */
+.offcanvas {
+    background-color: black;
+}
 
-main {background-color: #000000;}
-.hero{
+.offcanvas-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.offcanvas-title {
+    color: white;
+}
+
+.offcanvas .btn-close {
+    filter: invert(1);
+}
+
+.offcanvas-body .navbar-nav .nav-link {
+    color: white;
+}
+
+.offcanvas-body .navbar-nav .nav-link.active {
+    color: #fffb00;
+}
+
+.offcanvas-body .dropdown-menu {
+    background-color: rgb(30, 30, 30);
+}
+
+.offcanvas-body .dropdown-item {
+    color: white;
+}
+
+.offcanvas-body .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.offcanvas-body .form-control {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    border: 1px solid rgb(70, 70, 70);
+}
+
+.offcanvas-body .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.offcanvas-body .btn-outline-success {
+    color: #fffb00;
+    border-color: #fffb00;
+}
+
+.offcanvas-body .btn-outline-success:hover {
+    background-color: #fffb00;
+    color: black;
+}
+
+/* ----- Main Section ----- */
+main {
+    background-color: #000000;
+    padding-top: 56px; 
+    min-height: calc(100vh - 100px); 
+}
+
+.hero {
     height: 50vh;
     background-image: url(../img/fondo-pantera-negra.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px; 
 }
-.hero h2{text-decoration:none;
+
+.hero h2 {
     color: white;
-font-size: xx-large;
-text-align: center;}
-
-    .hero p{color:#fffb00;
-    text-align:initial;
-font-size: x-large;}
-
-.batman2{display: flex;
-justify-content: space-around;
-align-items: center;}
-
-.batman h2{text-decoration:none;
-color: rgb(0, 0, 0);
-text-align: center;
-font-size:xx-large;
-background-color: white;
-padding: 15px;}
-
-.batman .batman2 div{border: 1px solid rgb(255, 255, 255);
-width:500px;
-text-align: center;
-margin: 15px;
+    font-size: xx-large;
+    margin-bottom: 20px;
 }
 
-.batman div h3{color: rgb(255, 255, 255);
-margin: 5px;}
-
-.batman div a{text-decoration: none;
-color: black;
-background-color: white;
-font-size: 20px;
-padding: 1px;
-border-radius:7px ;}
-
-.batman div img{width: 80%;
-height:100%;
-padding: 10px;}
-
-
-
-.comprar{padding: 20vh;
-color: white;
-text-align: initial;}
-
-.comprar h2 {font-size:xx-large;
-background-color: white;
-color: black;
-text-align:initial;
-margin: 20px;}
-
-.comprar p {font-size: xx-large;
-;}
-
-.cristiano img{height: 300px;
-width: 400px;}
-
-.cristiano h2{font-size: xx-large;
-color: white;
-text-decoration: underline;}
-
-.cristiano p{font-size: x-large;}
-
-.florenzi{height: 50vh;}
-
-.florenzi h2{font-size: xx-large;
-color:white;
-text-decoration: underline;}
-
-.florenzi h3{font-size: x-large;
-color:white}
-
-.florenzi ol li{font-size: x-large}
-
-.paloma h2{font-size: xx-large;
-color: white;
-text-decoration: underline}
-
-.contacto h2{color: white;
-font-size: xx-large;
-text-decoration: underline;}
-
-.contacto p{color: #fffb00;
-font-size: x-large}
-
-.pato h2{font-size: xx-large;
-color: white;}
-
-.pato img{width: 100px;}
-
-.pato p{font-size: x-large;
-color:#fffb00}
-
-.whatsapp img{background-color: white;
-    border-radius: 15px;
-width: 60px;
-position:fixed;
-bottom:50px;
-right:20px;}
-
-/*-----GRID-----*/
-.grid-principal{border: solid 3px rgb(0, 0, 0);
-margin: 20px;
-display:grid;
-grid-template-rows: 200px 200px 200px 200px;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-height: 410px;
-gap: 10px;}
-
-.grid-principal div img{height: 100%;
-height: 100%;
-object-fit: cover;}
-
-.grids{border: solid 2px color(srgb rgb(255, 0, 0) rgb(255, 0, 0) rgb(255, 0, 0));
-background-color: #ffffff;
-grid-row: span 2;
-position: relative;
+.hero a {
+    color: #fffb00;
+    text-decoration: none;
+    font-size: x-large;
+    border: 2px solid #fffb00;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.grids h3{position: absolute;
-bottom: 0;
-color:white;
-background-color: rgba(0, 0, 0, 0.541);
-width: 100%;
-text-align: center;}
+.hero a:hover {
+    background-color: #fffb00;
+    color: black;
+}
+
+.batman {
+    background-color: black;
+    padding: 40px 0;
+}
+
+.batman h2 {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: xx-large;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 30px;
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 90%; 
+    display: table; 
+}
+
+.batman2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+.batman .batman2 div {
+    border: 1px solid rgb(255, 255, 255);
+    width: 300px; 
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(30, 30, 30);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    flex-shrink: 0; 
+}
+
+.batman div h3 {
+    color: rgb(255, 255, 255);
+    margin: 15px 0 10px 0;
+}
+
+.batman div a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 7px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.batman div a:hover {
+    background-color: #fffb00;
+}
+
+.batman div img {
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.comprar {
+    padding: 50px 5%;
+    color: white;
+    text-align: left;
+    background-color: black;
+}
+
+.comprar h2 {
+    font-size: xx-large;
+    background-color: white;
+    color: black;
+    text-align: initial;
+    margin-bottom: 20px;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.comprar p {
+    font-size: x-large;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+.whatsapp img {
+    background-color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+    z-index: 1000;
+}
+
+.whatsapp img:hover {
+    transform: scale(1.1);
+}
+
+/* ----- GRID PRINCIPAL ----- */
+.grid-principal {
+    margin: 20px auto;
+    display: grid;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 15px;
+    padding: 0 20px;
+    max-width: 1200px;
+}
+
+.grid-principal div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.grids {
+    border: 2px solid #fffb00;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer; 
+
+.grids img {
+    filter: brightness(0.8);
+    transition: filter 0.3s ease;
+}
+
+.grids:hover img {
+    filter: brightness(1);
+}
+
+.grids h3 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    font-size: large;
+}
+
+/* ----- Footer ----- */
+footer {
+    padding: 40px 20px;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: xx-large;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: large;
+    margin-bottom: 25px;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; 
+}
+
+footer a {
+    color: white;
+    font-size: xx-large;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fffb00;
+}
+
+/* --- MEDIA QUERIES --- */
 
 
+@media screen and (min-width: 1201px) {
+    .grid-principal {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .grid-principal {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    .batman .batman2 div {
+        width: 30%; 
+        min-width: 280px; 
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .grid-principal {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .batman .batman2 div {
+        width: 45%; 
+        max-width: 350px; 
+    }
+    .hero h2 {
+        font-size: x-large; 
+    }
+    .hero a {
+        font-size: large;
+    }
+    .comprar p {
+        font-size: large; 
+}
+
+
+@media screen and (max-width: 768px) {
     
-/*-----Footer-----*/
-
-footer{padding: 20px;}
-
-footer h2{font-size: xx-large; 
-text-align: center;} 
-
-footer p{font-size: x-large; 
-text-align: center;} 
-
-footer div {display: flex;
-align-items: center;
-justify-content: space-around;
-font-size: xx-large;}
-
-footer i {color: black;}
-
-/*-----MEDIA QUERY-----*/
-
-@media screen and (max-width: 555px) {
-/*header { flex-direction: column;}
-}*/
-
-@media screen and (max-width: 375px ) {
-/*header nav ul {flex-direction: column;}    
-}*/
-
-@media screen and (max-width: 1540px) {
-.hero {background-attachment: scroll;}
+    main {
+        padding-top: 70px; 
+    }
+    .hero {
+        height: 40vh; 
+    }
+    .hero h2 {
+        font-size: large; 
+        padding: 0 15px;
+    }
+    .hero a {
+        font-size: medium;
+        padding: 8px 15px;
+    }
+    .batman h2, .comprar h2, footer h2 {
+        font-size: x-large; 
+        padding: 10px;
+    }
+    .batman .batman2 {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 0 15px;
+    }
+    .batman .batman2 div {
+        width: 90%; 
+        max-width: 300px; 
+    }
+    .grid-principal {
+        grid-template-columns: repeat(1, 1fr); 
+        grid-auto-rows: auto;
+        padding: 0 15px;
+    }
+    .grids h3 {
+        font-size: medium; 
+    }
+    .comprar p {
+        font-size: medium;
+        padding: 0 15px;
+    }
+    footer div {
+        flex-direction: column; 
+        gap: 15px;
+    }
+    footer a {
+        font-size: x-large;
+    }
 }
 
-@media screen and (max-width: 560px) {
-.hero h2 {font-size: x-large;
-padding:85px;}
+
+@media screen and (max-width: 480px) {
+    .navbar-brand {
+        font-size: medium; 
+    }
+    .hero h2 {
+        display: none; 
+    }
+    .hero a {
+        font-size: small;
+        padding: 6px 12px;
+    }
+    .whatsapp img {
+        width: 45px;
+        height: 45px;
+        bottom: 15px;
+        right: 10px;
+    }
 }
+
 
 @media screen and (max-width: 375px) {
-.hero h2 {display: none;}
-    
-}
-
-@media screen and (max-width: 1595px) {
-.grid-principal {grid-template-rows: 200px 200px 200px 200px;
-grid-template-columns: repeat(3, 1fr);}
-    
-}
-
-@media screen and (max-width: 1525px) {
-.grid-principal {padding: 35px;}
-    
-}
-
-@media screen and (max-width: 1360px) {
-.grid-principal {padding: 15px;}
-}
-
-@media screen and (max-width: 1325px) {
-.grid-principal {grid-template-rows: 200px 200px 200px 200px;
-grid-template-columns: repeat(2, 1fr);}
-}
-
-@media screen and (max-width: 950px) {
-.grid-principal {grid-template-rows: 200px 200px 200px 200px;
-grid-template-columns: repeat(2, 400px);
-grid-auto-rows: 200px;}
-}
-
-@media screen and (max-width: 850px) {
-.grid-principal {grid-template-rows: 80px 80px 80px 80px;
-grid-template-columns: repeat(1, 1fr);
-grid-auto-rows: 80px;
-;}
+    .batman .batman2 div {
+        width: 95%; 
+    }
 }
